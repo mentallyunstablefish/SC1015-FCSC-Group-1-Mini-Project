@@ -33,8 +33,12 @@ Our exploratory data analysis included:
 
 We used the LightGBM framework, a Light Gradient Boosting Machine suitable for handling large datasets and high-dimensional features, especially effective with categorical data.
 
+
 ## 8. Result Analysis
 
 Our model configuration used the 'rmse' metric for optimization. Features like 'budget', 'popularity', and 'runtime' were identified as most influential in predicting revenue. We enhanced model robustness using K-Fold cross-validation and experimented with boosting variants like DART and GOSS to optimize feature importance analysis.
 
 
+# Authors
+Vaka Sreekethav, Rayapaty Yash, Saraf Harsha
+Team 1, FCSC
