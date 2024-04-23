@@ -40,5 +40,5 @@ Our model configuration used the 'rmse' metric for optimization. Features like '
 
 
 # Authors
-Vaka Sreekethav, Rayapaty Yash, Saraf Harsha
+Vaka Sreekethav, Rayapaty Yash, Saraf Harsha \n
 Team 1, FCSC
