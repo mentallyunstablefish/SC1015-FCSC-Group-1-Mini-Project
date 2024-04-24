@@ -1,44 +1,36 @@
-# SC1015-FCSC-Group-1-Mini-Project
-# Movie Revenue Prediction Analysis
+# FCSC Team 1 Mini Project
 
-## 1. Practical Motivation
+## Description
 
-This project explores the potential of data analysis in the entertainment industry, focusing on predicting box office revenues. Accurate revenue forecasts allow production companies, marketers, and distributors to make informed decisions regarding budgets, marketing strategies, and release schedules, optimizing resource allocation for both financial and critical success.
+This project aims to predict box office revenue using data analysis within the entertainment industry. It serves as a crucial tool for production companies, marketers, and distributors to make informed decisions about budgets, marketing strategies, and release schedules, ultimately optimizing resource allocation and enhancing a film's success.
 
-## 2. Problem Formulation
+## Data Extraction
 
-We aim to develop a predictive model for box office revenue by leveraging factors historically influencing a movie's financial performance.
+Data for this project was extracted from the IMDB movie database, which includes crucial features such as cast, crew, budget, and genres. The dataset is segmented into 'train' and 'test' sets to facilitate the modeling process.
 
-## 3. Sample Collection
+## Data Cleaning
 
-Data for this project was sourced from the IMDB movie database, encompassing variables such as cast, crew, budget, and genres. The dataset includes predefined 'train' and 'test' sets for model training and evaluation.
+The data cleaning process focused on dictionary-like columns such as 'genres', 'cast', and 'production companies'. Missing values in these columns were replaced with empty dictionaries to maintain uniformity. Additionally, string representations of dictionaries were converted into actual Python dictionary objects to facilitate further analysis.
 
-## 4. Data Cleaning
+## Data Preparation
 
-We focused on cleaning key dictionary-like columns including 'genres', 'cast', and 'production companies', replacing missing values with empty dictionaries and converting string representations into actual Python dictionary objects to maintain data uniformity.
+During data preparation, several transformations were applied to columns such as 'belongs_to_collection', 'genres', 'production_companies', 'production_countries', 'spoken_languages', 'keywords', 'cast', and 'crew'. Operations included counting items, extracting names to create aggregated strings of relevant items per movie, and applying one-hot encoding to expand the dataset for detailed analysis.
 
-## 5. Data Preparation
+## Data Exploration
 
-We transformed several columns ('belongs_to_collection', 'genres', 'production_companies', etc.) by counting items and extracting names to create aggregated strings per movie. Additionally, we implemented one-hot encoding to expand our dataset for detailed analysis.
+The exploratory data analysis included visualizing relationships between various movie features and revenue, such as budget, cast, and release day. Techniques such as scatter plots, violin plots, and dual-axis line charts were used to uncover trends and correlations, providing insights into factors influencing box office success.
 
-## 6. Visualization
+## Machine Learning
 
-Our exploratory data analysis included:
-- Scatter plots showing the relationship between movie budgets and revenue.
-- Categorical plots analyzing revenue variance across different weekdays of release.
-- Violin plots examining the revenue impact of specific actors.
-- Dual-axis line charts exploring the relationship between the year of release and revenue.
+The project utilized LightGBM, a machine learning framework suited for handling large datasets with high-dimensional features. The model was tuned and evaluated using Root Mean Squared Error (RMSE) and enhanced with K-Fold cross-validation to ensure robustness and reliability. Further experiments with variants like DART and GOSS highlighted different aspects of feature importance, aiding in the selection of the most effective model configuration.
 
-## 7. Model Architecture
+## Usage
 
-We used the LightGBM framework, a Light Gradient Boosting Machine suitable for handling large datasets and high-dimensional features, especially effective with categorical data.
+To run this project, ensure all dependencies are installed as outlined in the initial code cells of the notebook. Load the data, follow the notebook's sequential steps for data processing, exploration, and machine learning modeling, and apply the learned models to make revenue predictions.
 
 
-## 8. Result Analysis
+## Authors
 
-Our model configuration used the 'rmse' metric for optimization. Features like 'budget', 'popularity', and 'runtime' were identified as most influential in predicting revenue. We enhanced model robustness using K-Fold cross-validation and experimented with boosting variants like DART and GOSS to optimize feature importance analysis.
-
-
-# Authors
-Vaka Sreekethav, Rayapaty Yash, Saraf Harsha 
-(Team 1, FCSC)
+- Vaka Sreekethav
+- Rayapaty Yash
+- Saraf Harsha
