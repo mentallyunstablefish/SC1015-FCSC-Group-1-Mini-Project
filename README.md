@@ -1,4 +1,4 @@
-# FCSC Team 1 Mini Project
+# Box Office Revenue Prediction
 
 ## Description
 
