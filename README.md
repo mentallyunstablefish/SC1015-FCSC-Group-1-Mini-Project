@@ -1,8 +1,5 @@
 # Box Office Revenue Prediction
 
-## Description
-
-This project aims to predict box office revenue using data analysis within the entertainment industry. It serves as a crucial tool for production companies, marketers, and distributors to make informed decisions about budgets, marketing strategies, and release schedules, ultimately optimizing resource allocation and enhancing a film's success.
 
 ## Data Extraction
 
